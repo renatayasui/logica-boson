@@ -1,0 +1,36 @@
+<!doctype html>
+	<html>
+		<head>
+			<title>Lógica de Programação Javascript</title>
+			<meta charset="utf-8">
+		</head>
+
+		<body>
+			<h1>Lógica de Programação com Javascript</h1>
+
+			<script>
+				/* Escreva uma função que permita contar o número de vogais contidas em uma string fornecida pelo usuário. Por exemplo, o usuário informa a string “Beterraba”, e a função retorna o número 4 (há 4 vogais nessa palavra). 
+				Obs. Ignore vogais acentuadas, para simplificar */
+
+				function numVogais() {
+					var palavra = prompt('Digite uma palavra');
+
+					var soma = 0;
+
+					palavra = palavra.toLowerCase();
+
+					for(var i = 0; i < palavra.length; i++) {
+						var letra = palavra.charAt(i);
+
+						if(letra === "a" || letra === "e" || letra === "i" || letra === "o" || letra === "u") {
+
+							soma++;
+						}							
+					}
+					document.write("Número de vogais: " + soma);
+				}
+				numVogais()
+			
+			</script>
+		</body>
+	</html>

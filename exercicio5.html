@@ -1,0 +1,31 @@
+<!doctype html>
+	<html>
+		<head>
+			<title>Lógica de Programação Javascript</title>
+			<meta charset="utf-8">
+		</head>
+
+		<body>
+			<h1>Lógica de Programação com Javascript</h1>
+
+			<script>
+				//Escreva uma função que encontre a área e o perímetro de um círculo, de acordo com o raio fornecido.
+				
+				var raio = prompt('Digite o raio');
+				var raio = parseInt(raio);
+
+				function areaDoCirculo(raio) {
+					var area = (Math.PI * (raio * raio));
+					return area;
+				}
+				document.write('A área do círculo é: ' + areaDoCirculo(raio));
+
+				function perimetroDoCirculo(raio) {
+					var perimetro = ((2 * Math.PI) * raio);
+					return perimetro;
+				}
+				document.write('<p>O perímetro do círculo é: ' + '</p>' + perimetroDoCirculo(raio));
+			
+			</script>
+		</body>
+	</html>

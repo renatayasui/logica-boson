@@ -1,0 +1,35 @@
+<!doctype html>
+	<html>
+		<head>
+			<title>Lógica de Programação Javascript</title>
+			<meta charset="utf-8">
+		</head>
+
+		<body>
+			<h1>Lógica de Programação com Javascript</h1>
+
+			<script>
+				//Escreva uma função que verifica se um número fornecido pelo usuário em um prompt é primo ou não
+
+				function numeroPrimo(n) {
+					var n = prompt('Digite um número');
+					n = parseInt(n);
+
+					var divisores = 0;
+
+					for(var i = 1; i <= n; i++) {
+						if(n % i === 0) {
+							divisores++;
+						}
+
+						if(divisores === 2) {
+							console.log(n + ' é primo');
+						} else
+							console.log(n + ' não é primo');
+					}
+				}
+				numeroPrimo();
+				
+			</script>
+		</body>
+	</html>

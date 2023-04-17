@@ -1,0 +1,41 @@
+<!doctype html>
+	<html>
+		<head>
+			<title>Lógica de Programação Javascript</title>
+			<meta charset="utf-8">
+		</head>
+
+		<body>
+			<h1>Lógica de Programação com Javascript</h1>
+
+			<script>
+			/*Escreva uma função que informe o retorno de um investimento (montante) com base nos valores do capital inicial, tempo em meses e taxa de juros mensal, fornecidos pelo usuário.
+
+			Use a fórmula: M = C * (1+i)t
+			Onde:
+
+			C = Capital inicial investido
+			i = Taxa de juros, em percentual
+			t = Tempo do investimento, em meses
+			Exiba o resultado com duas casas decimais*/
+				
+				function retornoInvestimento(c, i, t) {
+					var m = c * (1 + (i /100)) ** t;
+					return m;
+				}
+				
+				var capital = prompt('Digite seu capital inicial');
+				capital = parseFloat(capital);
+
+				var taxaJuros = prompt('Digite a taxa de juros (em percentual)');
+				taxaJuros = parseFloat(taxaJuros);
+
+				var tempoInv = prompt('Digite o tempo do investimento em meses');
+				tempoInv = parseFloat(tempoInv);
+
+				var montante = retornoInvestimento(capital, taxaJuros, tempoInv);
+
+				document.write('O retorno de um investimento (montante) é: ' + montante.toFixed(2));
+			</script>
+		</body>
+	</html>

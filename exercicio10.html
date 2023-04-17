@@ -1,0 +1,29 @@
+<!doctype html>
+	<html>
+		<head>
+			<title>Lógica de Programação Javascript</title>
+			<meta charset="utf-8">
+		</head>
+
+		<body>
+			<h1>Lógica de Programação com Javascript</h1>
+
+			<script>
+				//Escreva uma função em JavaScript que conte quantas vezes um caractere aparece em uma string. Tanto o caractere quanto a string devem ser fornecidos pelo usuário
+
+				function contaCaractere() {
+					var palavra = prompt('Digite uma palavra');
+					
+					palavra = palavra.toLowerCase();	
+
+					var caractere = prompt('Digite um caractere');
+
+					var contar = palavra.split(caractere).length - 1;
+
+					document.write('O caractere ' + caractere + ' aparece ' + contar + ' vez(es)');
+				}
+				contaCaractere();
+			
+			</script>
+		</body>
+	</html>
